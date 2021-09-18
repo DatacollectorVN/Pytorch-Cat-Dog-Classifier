@@ -1,0 +1,12 @@
+{
+    "CHECKPOINT_DIR" : "./saved_model/best_model.pth",
+    "SAVE_PREDICTS_CSV" : "./predicts/preds.csv",
+    "NUM_CLASSES" : 2, 
+    "SIZE" : 224, 
+    "TEST_IMAGE_DIR" : "./Dog_Cat_dataset/test1/test1", 
+    "BATCH_SIZE" : 10, 
+    "NUM_WORKERS" : 1, 
+    "THRESHOLD" : 0.5, 
+    "NET_TYPE" : "resnet18"
+
+}
