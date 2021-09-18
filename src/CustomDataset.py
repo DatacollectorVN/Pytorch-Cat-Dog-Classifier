@@ -6,6 +6,7 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 from src.utils import resize_image, crop_square
 
+
 class CatAndDogDataset(Dataset):
     ''' load CatAndDogDataset for training with annotation
     Args: 
@@ -81,13 +82,5 @@ if __name__ == "__main__":
     transformer = DatasetTransform(resize=(224,224))
     dataset = CatAndDogDataset(csv_file, transformer, dir_train)
     
-    #print(dataset[0])
     print(dataset[0][0].shape)
     print(dataset[0][1])
-    
-
-
-
-
-
-    
